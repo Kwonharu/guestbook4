@@ -7,17 +7,18 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form>
+	<form action="/guestbook4/delete" method="get">
 		<table>
 			<tr>
 				<td>비밀번호</td>
-				<td><input type="password" name=""></td>
+				<td><input type="password" name="password"></td>
 				<td><button type="submit">삭제</button></td>
+				<td><input type="hidden" name="no" value="${guestVo.no}"></td>
 			</tr>
 		</table>
 	</form>
 	
 	<br><br>
-	<a href="">메인으로 돌아가기</a>
+	<a href="/guestbook4/addList">메인으로 돌아가기</a>
 </body>
 </html>
